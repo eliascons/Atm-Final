@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+/* Imported in index.js */
+:root {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #5c5c5e;
+    --bg-secondary: #141418;
+}
+
+body {
+    color: white;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Used in navi.js */
+/* Navbar */
+ul {
+    margin-top: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+
+}
+
+.header {
+    margin-top: 0;
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background: grey;
+}
+
+
+.navbar {
+
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0;
+    position: relative;
+    background-color: var(--bg-primary);
+
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.nav-item {
+    padding-top: 0px;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: 1em;
+    cursor: pointer;
+
+}
+
+.nav-item:hover {
+    background-color: #5858e7;
+}
+
+.nav-item:first-child {
+    margin-left: 10em;
+
+
+}
+
+.nav-item:last-child {
+    margin-left: auto;
+}
+
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+.nav-link:hover {
+
+    color: rgb(241, 241, 241);
+    transition: 100ms;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* End Navbar */
+
+/* Used in viewAccounts.js */
+/* All Acounts  */
+.accounts-header {
+    text-align: center;
+    cursor: default;
+
+}
+
+
+
+/* Card */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 10px;
+    align-items: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.card {
+    background-color: #6060633d;
+    padding: 1rem;
+    margin-bottom: 10px;
+    border: 1px solid rgb(34, 32, 32);
+
+
+}
+
+.card:hover {
+    border: none;
+    box-shadow: 0 1px 3px 0 #5858e7;
+}
+
+.card-header {
+    font-size: 1.6rem;
+    margin-bottom: .5rem;
+    text-align: center;
+
+
+
+}
+
+.card-body {
+    font-size: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    word-wrap: break-word;
+}
+
+.card-footer {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.btn {
+    background: hsl(210, 1%, 36%);
+    color: white;
+    border: none;
+    padding: .5em .75em;
+    border-radius: .25em;
+
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #5858e7;
+    cursor: pointer;
+}
+
+.card-link+.card-link {
+    margin-left: .3em;
+
+}
+
+
+.btn.btn-outline {
+    margin-left: .5em;
+    background: none;
+    border: 1px solid #5858e7;
+}
+
+.btn.btn-outline:hover,
+.btn.btn-outline:focus {
+    background: rgb(192, 127, 127);
+
+}
+
+/* End Card */
+/* End All Acounts  */
+
+/* Used in login.js */
+/* Login page */
+
+.form {
+
+    height: 520px;
+    width: 400px;
+    background-color: rgba(103, 107, 141, 0.185);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+
+}
+
+
+.form-home {
+
+    height: 650px;
+    width: 1000px;
+    background-color: rgba(103, 107, 141, 0.185);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+
+}
+
+
+.form-register {
+
+    height: 520px;
+    width: 400px;
+    background-color: rgba(179, 185, 187, 0.185);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+
+
+
+}
+
+.form-register * {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.form * {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.header-login {
+    color: #ffffff;
+}
+
+form h3 {
+    font-size: 39px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+
+}
+
+.label {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.input {
+    display: block;
+    height: 50px;
+    width: 95%;
+    background-color: rgba(238, 238, 238, 0.932);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+
+}
+
+.input:hover {
+    border: none;
+    box-shadow: 0 1px 3px 0 #5858e7;
+}
+
+.input:focus {
+    border: 1px solid #5858e783;
+    box-shadow: 0 1px 3px 0 #5858e7;
+}
+
+.input::selection {
+    background: #5858e7;
+}
+
+.input::placeholder {
+    color: #000000b6;
+    font-size: 16px;
+}
+
+.btn-login {
+
+    margin-top: 60px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 800ms;
+
+}
+
+.btn-login:disabled,
+btn-login[disabled] {
+    background: rgba(167, 96, 96, 0.342);
+    color: #b6b6b6;
+
+}
+
+
+
+
+
+
+.btn-login:hover {
+    background: #5858e7bb;
+    transition: 200ms;
+    cursor: pointer;
+
+
+}
+
+
+.valid-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+
+/* End Login page */
+
+/* Bank image */
+
+.img {
+    margin-top: 1.3em;
+    margin-left: 1em;
+    width: 2%;
+    height: 2%;
+    position: relative;
+}
+
+/* Video */
+.video-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "info info video ."
+        "info info . ."
+        "info info . .";
+    font-family: 'Indie Flower', cursive;
+
+
+
+}
+
+.info {
+    grid-area: info;
+    font-size: 30px;
+
+}
+
+.video {
+    font-size: 19px;
+    grid-area: video;
+
+
+
+}
