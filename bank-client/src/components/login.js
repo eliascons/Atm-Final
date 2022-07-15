@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "../contexts/authContext";
 
-// Login
+// Login page
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
