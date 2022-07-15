@@ -1,2 +1,0 @@
-# Atm-Final
-Atm simulation
