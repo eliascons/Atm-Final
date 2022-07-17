@@ -73,8 +73,3 @@ function Navi() {
 }
 
 export default Navi;
-// <li className="nav-item"><div className="nav-link">{auth.displayName}</div></li>
-
-// ()
-
-// ()
