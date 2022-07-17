@@ -9,11 +9,14 @@ let refreshTokens = [];
 
 router.post("/login", (req, res) => {
   const { username, password } = req.body;
+
   User.findOne({ username: username }, (err, user) => {
     if (err || !user) {
-      res.sendStatus(401);
+      return res.sendStatus(401);
     } else {
-      if (password === user.password) {
+
+      if (user.password === password) {
+        console.log('valid')
         const accessToken = jwt.sign(
           { username: user.username, id: user._id },
           process.env.SECRET_TOKEN,
@@ -25,10 +28,11 @@ router.post("/login", (req, res) => {
           process.env.REFRESH_TK
         );
 
-        
+
         refreshTokens.push(refreshToken);
         res.json({ accessToken, refreshToken, username });
       } else {
+        console.log('errr');
         return res.sendStatus(401);
       }
     }
