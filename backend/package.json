@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
@@ -9,8 +9,5 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.4.2"
   },
-  "type": "module",
-  "devDependencies": {
-    "nodemon": "^2.0.19"
-  }
+  "type": "module"
 }
