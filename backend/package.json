@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "node server.js",
-    "heroku-postbuild": "cd .. && cd bank-client && npm install --only=dev && npm install && npm run build"
+    "heroku-postbuild": "cd .. && cd /bank-client && npm install --only=dev && npm install && npm run build"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
