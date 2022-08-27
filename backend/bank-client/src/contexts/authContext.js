@@ -3,9 +3,6 @@ import useProvideAuth from "../hooks/useProvideAuth.js";
 
 const authContext = createContext();
 
-
-
-
 function AuthProvider({children}){
     const auth = useProvideAuth();
 
